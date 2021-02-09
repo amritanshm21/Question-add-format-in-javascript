@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Medwhiz</title>
+        <link href="newTask.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="main">
+            <div id="form">
+                    <div id="qstn">
+                    <input type="text" class="inpt1" placeholder="Question Goes Here ..." id="question">
+                    <button id="reload" onclick="reset()"> </button>
+                    </div>
+                <div id="addRemove">Add/Remove option    :<button onclick="Add()" id="adding"></button>  <button onclick="Remove()" id="removal"></button>   </div>
+                <div id="opt">
+                    <div class="two">
+                        <label class="label">Option 1</label>
+                        <input type="text" id="opt1" placeholder="Type option here ..." class="inpt2">
+                    </div>
+                    <div class="two">
+                        <label class="label">Option 2</label>
+                        <input type="text" id="opt2" placeholder="Type option here ..." class="inpt2">
+                    </div>
+                    <div class="two">
+                        <label class="label">Option 3</label>
+                        <input type="text" id="opt3" placeholder="Type option here ..." class="inpt2">
+                    </div>
+                    <div class="two">
+                        <label class="label">Option 4</label>
+                        <input type="text" id="opt4" placeholder="Type option here ..." class="inpt2">
+                    </div>
+                </div>
+                <div id="three">
+                        <select id="inpt3" >
+                            <option value=""> --- Choose Answer --- </option>
+                            <option id="ans1" class="answer" ></option>
+                        </select>
+                    <button id="btn3" onclick="result()" value="Save">Save</button>
+                </div>
+            </div>
+            <div id="form2">
+                <div id="conclude"></div>
+            </div>
+        </div>
+        <script src="newTask.js" type="text/javascript"></script>
+        
+    </body>
+</html>
